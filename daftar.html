@@ -7,21 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Daftar ke <span>Dulang</span></h1>
-    <form action="Beranda.html">
-        <label for="email">
-            Email <br>
-            <input type="email" id="email" name="email">
-        </label>
-        <br><br>
-        <label for="password">
-            Password <br>
-            <input type="password" id="password" name="password">
-        </label>
-    </form>
+    <div class="form-container">
+        <div class="form-header">
+            <div class="icon">
+                <i class="fa fa-user"></i>
+            </div>
+            <h2>Buat Akun</h2>
+        </div>
 
-    <br>
+        <form class="register-form" action="Masuk.html">
+            <div class="input-group">
+                <label>Full Name</label>
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter your full name" name="name" id="fullname">
+                </div>
+                <span class="error-info" id="nameerror"></span>
+            </div>
+            <div class="input-group">
+                <label>Email Address</label>
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Enter your email" id="email">
+                </div>
+                <span class="error-info" id="emailerror"></span>
+            </div>
 
-    <button type="submit">Login</button>
+            <div class="input-group">
+                <label for="">Password</label>
+                <div class="input-field">
+                    <i class="fa fa-key"></i>
+                    <input type="password" name="password" id="password" placeholder="Min. 8 characters">
+                </div>
+                <span class="error-info" id="passworderror"></span>
+            </div>
+        </form>
+        <button type="submit" class="reg-btn">Register</button>
+        
+        <p class="login-text">
+            Already have an account? <a href="Masuk.html">Login</a>
+        </p>
+        
+    </div>
 </body>
 </html>
