@@ -86,3 +86,9 @@ a{
     font-size: 96px;
     align-content: center;
 }
+
+span{
+    font-family: 'CreamCake';
+    font-size: 56px;
+    padding: 10px;
+}
