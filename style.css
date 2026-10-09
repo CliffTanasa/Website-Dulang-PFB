@@ -39,6 +39,10 @@
     margin: 0;
     padding: 0;
 }
+/* 
+body::-webkit-scrollbar {
+  display: none; 
+} */
 
 a{
     text-decoration: none;
@@ -229,10 +233,55 @@ span{
 
 /* MEAL TYPE PROTEIN */
 .meal-type{
-    background-color: #f5f5f5;
-
+    padding: 50px 78px;
 }
 
 .meal-type-heading{
-    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+.meal-card{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+
+    /* ini buat ngilangin scroll bar di tampilan */
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.meal-type-card{
+    /* flex: grow shrink basis */
+    flex: 0 0 350px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 16px;
+    color: #0A4A30;
+}
+
+.meal-type-card img{
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+.meal-type-card h3{
+    font-size: 20px;
+}
+
+.meal-type-card p{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.meal-type-card a{
+    border: #0A4A30 1px solid;
+    border-radius: 16px;
+    color: #0A4A30;
+
+    padding: 6px 14px;
 }
